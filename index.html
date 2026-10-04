@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment #3. Responsive Web Design</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 16px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+    }
+
+    .author {
+      color: #555;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .link-card {
+      display: block;
+      padding: 20px 24px;
+      background: #fff;
+      border-radius: 8px;
+      border-left: 6px solid #3498db;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .link-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .link-card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 4px;
+    }
+
+    .link-card p {
+      color: #555;
+    }
+
+    .part-1 { border-left-color: #e74c3c; }
+    .part-2 { border-left-color: #3498db; }
+    .part-3 { border-left-color: #2ecc71; }
+
+    /* Mobile: up to 767px */
+    @media (max-width: 767px) {
+      .wrapper { padding: 24px 12px; }
+      h1 { font-size: 1.5rem; }
+      .link-card { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header>
+      <h1>Assignment #3. Responsive Web Design</h1>
+      <p class="author">Torekhan Taimas | Group IT-2503</p>
+    </header>
+
+    <main class="links">
+
+      <a class="link-card part-1" href="part1/part1.html">
+        <h2>Part 1. Media Queries</h2>
+        <p>Task 0: Responsive Typography. Task 1: Responsive Layout.</p>
+      </a>
+
+      <a class="link-card part-2" href="part2.html">
+        <h2>Part 2. Bootstrap Grid System</h2>
+        <p>Task 2: Bootstrap Responsive Columns. Task 3: Bootstrap Navigation Bar.</p>
+      </a>
+
+      <a class="link-card part-3" href="part3/portfolio.html">
+        <h2>Part 3. Combined Project</h2>
+        <p>Task 4: Responsive Portfolio Page.</p>
+      </a>
+
+    </main>
+
+  </div>
+</body>
+</html>

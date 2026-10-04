@@ -1,0 +1,41 @@
+body {
+  background: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main { flex: 1; }
+
+.img-1 { background: linear-gradient(135deg, #e74c3c, #f39c12); }
+.img-2 { background: linear-gradient(135deg, #3498db, #8e44ad); }
+.img-3 { background: linear-gradient(135deg, #2ecc71, #1abc9c); }
+.img-4 { background: linear-gradient(135deg, #34495e, #95a5a6); }
+
+/* ---------- Desktop: default styles ---------- */
+.main-section { padding-top: 48px; padding-bottom: 48px; }
+.section-title { font-size: 1.75rem; margin-bottom: 12px; }
+.tagline { display: block; font-size: 1.3rem; margin-bottom: 20px; }
+.sidebar-extra { display: block; }
+.card-text { font-size: 1rem; }
+.project-img { height: 190px; }
+.sidebar { position: sticky; top: 24px; }   /* sidebar follows scroll */
+
+/* ---------- Tablet: up to 991px ---------- */
+@media (max-width: 991px) {
+  .main-section { padding-top: 32px; padding-bottom: 32px; }
+  .section-title { font-size: 1.5rem; }
+  .tagline { font-size: 1.1rem; }
+  .project-img { height: 170px; }
+  .sidebar { position: static; }            /* sidebar is under the projects here */
+}
+
+/* ---------- Mobile: up to 767px ---------- */
+@media (max-width: 767px) {
+  .main-section { padding-top: 16px; padding-bottom: 16px; }
+  .section-title { font-size: 1.25rem; }
+  .tagline { display: none; }               /* hidden on mobile */
+  .sidebar-extra { display: none; }         /* hidden on mobile */
+  .card-text { font-size: 0.9rem; }
+  .project-img { height: 140px; }
+}
