@@ -8,13 +8,14 @@
 ```
 WEB assignment 3/
 ├── part1/
-│   ├── index.html
+│   ├── part1.html
 │   └── style.css
-├── part2/
-│   └── index.html
+├── part2.html
+│
 ├── part3/
-│   ├── index.html
+│   ├── portfolio.html
 │   └── style.css
+├─ index.html
 └── README.md
 ```
 
@@ -41,15 +42,18 @@ Breakpoints:
 
 Desktop:
 
-![Task 0 desktop](screenshots/task0-desktop.png)
+<img width="1917" height="355" alt="изображение" src="https://github.com/user-attachments/assets/4eb76bab-c47f-4032-bd38-fe2c69af973a" />
+
 
 Tablet:
 
-![Task 0 tablet](screenshots/task0-tablet.png)
+<img width="1051" height="382" alt="изображение" src="https://github.com/user-attachments/assets/85f98fe2-b3cd-4b17-9181-a70c6a8b92e8" />
+
 
 Mobile:
 
-![Task 0 mobile](screenshots/task0-mobile.png)
+<img width="1035" height="416" alt="изображение" src="https://github.com/user-attachments/assets/441fcde5-b7ac-439c-91ff-1af006bbe684" />
+
 
 ### Task 1. Responsive Layout with Media Queries
 
@@ -59,15 +63,18 @@ Mobile:
 
 Desktop (three in a row):
 
-![Task 1 desktop](screenshots/task1-desktop.png)
+<img width="1917" height="403" alt="изображение" src="https://github.com/user-attachments/assets/2f52b198-5086-479c-af20-0848d2cafa81" />
+
 
 Tablet (two in a row):
 
-![Task 1 tablet](screenshots/task1-tablet.png)
+<img width="1063" height="600" alt="изображение" src="https://github.com/user-attachments/assets/e5332ad6-272f-4988-9f05-505730d3e574" />
+
 
 Mobile (stacked):
 
-![Task 1 mobile](screenshots/task1-mobile.png)
+<img width="986" height="647" alt="изображение" src="https://github.com/user-attachments/assets/b37dd6b1-993a-4cb2-8940-784bf170e3df" />
+
 
 ---
 
@@ -87,15 +94,18 @@ Tasks 2 and 3 are on the same page: `part2/index.html`.
 
 Desktop:
 
-![Task 2 desktop](screenshots/task2-desktop.png)
+<img width="1917" height="412" alt="изображение" src="https://github.com/user-attachments/assets/7da3378a-7f10-4ff4-9c94-fcbeebd60869" />
+
 
 Tablet:
 
-![Task 2 tablet](screenshots/task2-tablet.png)
+<img width="1087" height="602" alt="изображение" src="https://github.com/user-attachments/assets/a83d0056-2503-4778-b5fa-f28b8c80aa5d" />
+
 
 Mobile:
 
-![Task 2 mobile](screenshots/task2-mobile.png)
+<img width="1193" height="806" alt="изображение" src="https://github.com/user-attachments/assets/8effc3d0-0de3-4f18-a92a-309c6e3c3aa9" />
+
 
 ### Task 3. Bootstrap Navigation Bar
 
@@ -105,15 +115,18 @@ Mobile:
 
 Desktop (full menu):
 
-![Task 3 desktop](screenshots/task3-desktop.png)
+<img width="1917" height="142" alt="изображение" src="https://github.com/user-attachments/assets/a74b3682-9849-4f6c-b19c-876c1ffc0b3e" />
+
 
 Mobile (collapsed, hamburger button):
 
-![Task 3 mobile collapsed](screenshots/task3-mobile-collapsed.png)
+<img width="515" height="95" alt="изображение" src="https://github.com/user-attachments/assets/f827011a-2a81-4d5b-8887-a5fea8a2936b" />
+
 
 Mobile (menu opened):
 
-![Task 3 mobile opened](screenshots/task3-mobile-opened.png)
+<img width="512" height="286" alt="изображение" src="https://github.com/user-attachments/assets/72612bcc-c176-4a49-a84b-eecf8fc8a28d" />
+
 
 ---
 
@@ -133,19 +146,23 @@ Mobile (menu opened):
 
 Desktop:
 
-![Task 4 desktop](screenshots/task4-desktop.png)
+<img width="1917" height="1032" alt="изображение" src="https://github.com/user-attachments/assets/7332505b-1e1e-40cf-8ddd-c4d6b133b760" />
+
 
 Tablet:
 
-![Task 4 tablet](screenshots/task4-tablet.png)
+<img width="1041" height="986" alt="изображение" src="https://github.com/user-attachments/assets/afe219b8-b8d9-402d-9648-bb4b23b84e14" />
+
 
 Mobile:
 
-![Task 4 mobile](screenshots/task4-mobile.png)
+<img width="513" height="990" alt="изображение" src="https://github.com/user-attachments/assets/c778f862-531c-42e4-a458-2a4812d5ea77" />
+
 
 Mobile (navbar opened):
 
-![Task 4 mobile menu](screenshots/task4-mobile-menu.png)
+<img width="530" height="266" alt="изображение" src="https://github.com/user-attachments/assets/1cc43bdd-d019-4072-bf05-2bedfddf8270" />
+
 
 ---
 
@@ -155,4 +172,4 @@ I completed the assignment in three parts. In Part 1 I wrote the layout and typo
 
 Bootstrap was the hardest part of this assignment for me. At first I did not understand how a few class names could replace so much CSS. It was difficult to understand how the 12-column grid works, how `col-12 col-md-6 col-lg-4` combine at different screen sizes, and why the grid is mobile-first while my own CSS was desktop-first. The navbar was also confusing because the hamburger menu only works when the Bootstrap JavaScript file is connected and the `data-bs-target` matches the `id` of the menu. I understood it better after opening DevTools and looking at the media queries inside Bootstrap's own CSS, and after realizing that the grid is just flexbox plus media queries, which I had already written myself in Part 1. Rows, columns and containers must also be nested correctly, otherwise the layout breaks.
 
-In Part 3 I combined both approaches. Bootstrap handles the structure (navbar, grid, cards) and my own media queries handle the fine details (font sizes, spacing, hidden elements). I also had a problem with the CSS file not loading because of a wrong path in the `link` tag, which I fixed by using the correct relative path. I tested every page in Chrome DevTools at about 375px, 768px and 1200px and took the screenshots from there.
+In Part 3 I combined both approaches. Bootstrap handles the structure (navbar, grid, cards) and my own media queries handle the fine details (font sizes, spacing, hidden elements). I tested every page in Chrome DevTools at about 375px, 768px and 1200px and took the screenshots from there.
